@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="imagegallery.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="heading">
+        <h1>Cuisine with Recipes</h1>
+        <h4>Presented By Cesar Al Ayache</h4>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <img src="food1.jpeg" onclick = "showRecipe('recipe1.jpg')" >
+            <img src="food2.jpeg" onclick = "showRecipe('recipe2.jpg')">
+            <img src="food3.jpeg" onclick = "showRecipe('recipe3.jpg')">
+            <img src="food4.jpeg" onclick = "showRecipe('recipe4.jpg')">
+            <img src="food5.jpeg" onclick = "showRecipe('recipe5.jpg')">
+            <img src="food6.jpeg" onclick = "showRecipe('recipe6.jpg')">
+            <img src="food7.jpeg" onclick = "showRecipe('recipe7.jpg')">
+            <img src="food8.jpeg" onclick = "showRecipe('recipe8.jpg')">
+            <img src="food9.jpeg" onclick = "showRecipe('recipe9.jpg')">
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="hideRecipe()">
+        <div class="recipe-container" onclick="event.stopPropagation()">
+            <img id="recipeImage" class="recipe-image" src="" alt="Recipe Image" onclick=hideRecipe()>
+        </div>
+    </div>
+
+    <script src="imagegallery.js"></script>
+</body>
+</html>
